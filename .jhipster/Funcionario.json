@@ -1,0 +1,41 @@
+{
+    "name": "Funcionario",
+    "fields": [
+        {
+            "fieldName": "nomeCompleto",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "estadoCivil",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "email",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "phoneNumber",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "aniversario",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "salario",
+            "fieldType": "Long"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20200122033526",
+    "entityTableName": "funcionario",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "testeApi",
+    "applications": "*",
+    "microserviceName": "testeApi"
+}

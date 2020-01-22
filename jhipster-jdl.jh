@@ -1,0 +1,11 @@
+entity Funcionario  {
+	nomeCompleto String,
+	estadoCivil String,
+	email String,
+	phoneNumber String,
+	aniversario Instant,
+	salario Long,
+}
+
+dto * with mapstruct
+service all with serviceImpl

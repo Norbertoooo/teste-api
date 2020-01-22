@@ -1,0 +1,40 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "br.com.teste.api",
+      "nativeLanguage": "pt-br"
+    },
+    "jhipsterVersion": "6.6.0",
+    "applicationType": "microservice",
+    "baseName": "testeApi",
+    "packageName": "br.com.teste.api",
+    "packageFolder": "br/com/teste/api",
+    "serverPort": "8081",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "ODdjY2RmZjgyODFhMWI0NzZkMzEzNTQ3OWJjMzY5ZWY3YzJiZjA4NzEwN2YxODVjMGFlNzc3NDNmN2MxNzZlMmVhOGQzZjFmMmNiYTkyM2JkMTIxOTdkNjEzNTgyNjY0MjQyMGVlYTIyOTJkNDY1OWQ0ODg3OTVmYTJhMTIxY2M=",
+    "embeddableLaunchScript": false,
+    "creationTimestamp": 1579661359337,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "clientPackageManager": "npm",
+    "nativeLanguage": "pt-br",
+    "languages": ["pt-br"],
+    "blueprints": [],
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}

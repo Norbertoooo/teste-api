@@ -45,6 +45,7 @@ public class FuncionarioResource {
      * @return the {@link ResponseEntity} with status {@code 201 (Created)} and with body the new funcionarioDTO, or with status {@code 400 (Bad Request)} if the funcionario has already an ID.
      * @throws URISyntaxException if the Location URI syntax is incorrect.
      */
+    @CrossOrigin
     @PostMapping("/funcionarios")
     public ResponseEntity<FuncionarioDTO> createFuncionario(@RequestBody FuncionarioDTO funcionarioDTO) throws URISyntaxException {
         log.debug("REST request to save Funcionario : {}", funcionarioDTO);
@@ -66,6 +67,7 @@ public class FuncionarioResource {
      * or with status {@code 500 (Internal Server Error)} if the funcionarioDTO couldn't be updated.
      * @throws URISyntaxException if the Location URI syntax is incorrect.
      */
+    @CrossOrigin
     @PutMapping("/funcionarios")
     public ResponseEntity<FuncionarioDTO> updateFuncionario(@RequestBody FuncionarioDTO funcionarioDTO) throws URISyntaxException {
         log.debug("REST request to update Funcionario : {}", funcionarioDTO);
@@ -84,6 +86,7 @@ public class FuncionarioResource {
 
      * @return the {@link ResponseEntity} with status {@code 200 (OK)} and the list of funcionarios in body.
      */
+    @CrossOrigin
     @GetMapping("/funcionarios")
     public List<FuncionarioDTO> getAllFuncionarios() {
         log.debug("REST request to get all Funcionarios");
@@ -96,6 +99,7 @@ public class FuncionarioResource {
      * @param id the id of the funcionarioDTO to retrieve.
      * @return the {@link ResponseEntity} with status {@code 200 (OK)} and with body the funcionarioDTO, or with status {@code 404 (Not Found)}.
      */
+    @CrossOrigin
     @GetMapping("/funcionarios/{id}")
     public ResponseEntity<FuncionarioDTO> getFuncionario(@PathVariable Long id) {
         log.debug("REST request to get Funcionario : {}", id);
@@ -109,6 +113,7 @@ public class FuncionarioResource {
      * @param id the id of the funcionarioDTO to delete.
      * @return the {@link ResponseEntity} with status {@code 204 (NO_CONTENT)}.
      */
+    @CrossOrigin
     @DeleteMapping("/funcionarios/{id}")
     public ResponseEntity<Void> deleteFuncionario(@PathVariable Long id) {
         log.debug("REST request to delete Funcionario : {}", id);
